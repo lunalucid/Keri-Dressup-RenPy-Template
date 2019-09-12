@@ -10,7 +10,18 @@ init:
     default top_style_max = 6
     default bottom_style = 1
     default bottom_style_max = 6
-
+#####################################renpy langauge version:
+image keri = LiveComposite(
+    (467, 946),
+    (0, 0), "Create_Character/Base/base[skin_color].png",
+    (0, 0), "Create_character/Bottoms/bottom[bottom_choice]_[bottom_style].png",
+    (0, 0), "Create_character/Tops/top[top_choice]_[top_style].png",
+    (0, 0), "Create_character/Eyebrows/eyebrows[skin_color]_1.png",
+    (0, 0), "Create_character/Eyes/eyes[eyes]_[eye_color].png",
+    (0, 0), "Create_character/Mouth/mouth[skin_color]_1.png",
+    (0, 0), "Create_character/Hair/hair[hairstyle]_[hair_color].png",
+)
+#####################################python version:
 init python:
     def keri_sprite(st, at):
         return LiveComposite(

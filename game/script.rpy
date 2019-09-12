@@ -1,4 +1,4 @@
-﻿image keri = DynamicDisplayable(keri_sprite)
+﻿#image keri = DynamicDisplayable(keri_sprite) #uncomment to use python version
 image school = "Modern_School.png"
 label start:
     call screen dress_keri
