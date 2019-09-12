@@ -7,3 +7,5 @@ Keri is CC-BY license
 You are not required to credit me for the code template or manipulated images but if you'd like to do so you can credit LunaLucid https://lunalucid.itch.io/
 
 This template was created with the Ren'Py Engine
+
+Note: Not all Keri assets were included. You can download the original PSD at the Lemma Soft link above.
