@@ -1,9 +1,8 @@
 # Keri-Dressup-RenPy-Template
-<<<<<<< HEAD
+
 Images and code for a character creation screen based off of the sprite **Keri** created by **Konett**.
-=======
+
 Images and code for a character creation screen based off of the sprite 'Keri' created by Konett. Image modifications, interface, and code created by LunaLucid/Namastaii. If you use this sprite, please credit Konett.
->>>>>>> 9e8eb0d35b941ffbdec47fa7017f1a2d0ebc8381
 
 _Modifications created by LunaLucid/Namastaii. If you use this sprite, please credit Konett._
 
