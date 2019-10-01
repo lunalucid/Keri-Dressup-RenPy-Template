@@ -19,7 +19,6 @@ This template was created with the Ren'Py Engine
 
 _Note: Not all Keri assets were included. You can download the original PSD at the Lemma Soft link above._
 ___
-In **dressup.rpy**, there is a Ren'Py language version of the character live composite and a Python version just so you can see how each one works. In this case, they're almost the same.
 
 The images for the sprite layers are quite large so you'll need to factorscale the layers in livecomposite or continue to display with **zoom**.
 
@@ -42,7 +41,7 @@ init:
 #### LiveComposite of the character:
 
 ```python
-image keri = LiveComposite(
+image keri = Composite(
     (467, 946),
     (0, 0), "Create_Character/Base/base[skin_color].png",
     (0, 0), "Create_character/Bottoms/bottom[bottom_choice]_[bottom_style].png",
@@ -73,3 +72,20 @@ will change the path to **"Create_character/Hair/hair2_1.png"** etc
 
 During game, you can also change these variables in the script with the following syntax:
 `$ top_choice = 3`
+___
+##### Python equivalent:
+```python
+init python:
+    def keri_sprite(st, at):
+        return LiveComposite(
+            (467, 946),
+            (0, 0), "Create_Character/Base/base{}.png".format(skin_color),
+            (0, 0), "Create_character/Bottoms/bottom{}_{}.png".format(bottom_choice, bottom_style),
+            (0, 0), "Create_character/Tops/top{}_{}.png".format(top_choice, top_style),
+            (0, 0), "Create_character/Eyebrows/eyebrows{}_1.png".format(skin_color),
+            (0, 0), "Create_character/Eyes/eyes{}_{}.png".format(eyes, eye_color),
+            (0, 0), "Create_character/Mouth/mouth{}_1.png".format(skin_color),
+            (0, 0), "Create_character/Hair/hair{}_{}.png".format(hairstyle, hair_color),
+        ),.1
+```
+`image keri = DynamicDisplayable(keri_sprite)`

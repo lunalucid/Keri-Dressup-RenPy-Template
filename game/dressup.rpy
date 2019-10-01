@@ -11,7 +11,7 @@ init:
     default bottom_style = 1
     default bottom_style_max = 6
 #####################################renpy langauge version:
-image keri = LiveComposite(
+image keri = Composite(
     (467, 946),
     (0, 0), "Create_Character/Base/base[skin_color].png",
     (0, 0), "Create_character/Bottoms/bottom[bottom_choice]_[bottom_style].png",
